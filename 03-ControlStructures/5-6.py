@@ -14,9 +14,11 @@ print(f"The sum of even numbers from 1 to {N} is: {sum_even}")
 sum = 0
 number = 0
 while  number < 11:
-    if number % 2 != 0:
-        continue
-    sum = sum + number
-    number += 1
+    if number % 2 == 0:
+        sum = sum + number
+        number += 1  
+    else:
+        number += 1
+    
 
-print(f"The sum of even numbers from 1 to 110 is: {sum}")
+print(f"The sum of even numbers from 1 to 10 is: {sum}")
