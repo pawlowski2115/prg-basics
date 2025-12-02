@@ -1,11 +1,19 @@
-generate = "tekst"
-number = str(565656)
-jacket = 40
-underwear = 70 
-shoes = 20
-print(jacket+underwear+shoes)
+def f(number,even):
+    result = 0
+    number = str(number)
+    if even is True:
+        for i in number:
+            if int(i) % 2 == 0:
+                result = result +int(i)
+            else:
+                continue
+    elif even is False:
+        for i in number:
+            if int(i) % 2 != 0:
+                result = result +int(i)
+            else:
+                continue
+    return result
 
-if number.isdigit():
-    print("generate is digit")
-else:
-    print("generate is not digit")
+print(f(3124,False))
+

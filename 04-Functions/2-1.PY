@@ -19,4 +19,8 @@ print(f'The binary string representing decamal number 304 is {binary}')
 hexa = hex(304)
 print(f'The hexadecimal string representing decimal number 304 is {hexa}')
 
-euro = ord()
+euro = ord('€')
+print(f'The Unicode code point of the Euro sign (€) is {euro}')
+
+abs_value = abs(-17)
+print(f'The absolute value of -17 is {abs_value}')
