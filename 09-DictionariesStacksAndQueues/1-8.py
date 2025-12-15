@@ -14,5 +14,10 @@ print(f'Total price: {total_price}')
 
 discount = 0.1
 
+total_price_discount = 0
 for item, price in price_list.items():
-    print(f'{item}: {price * (1 - discount):.2f}')
+    new_price = price * (1-discount)
+    print(f'{item}: {new_price:.2f}')
+    total_price_discount = total_price_discount + new_price
+
+print(f'{total_price_discount:.2f}')
