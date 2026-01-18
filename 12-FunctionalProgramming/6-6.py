@@ -1,0 +1,8 @@
+workers = [("Smith","Lucy"),("Jones","Janet"),("Lee","Jerry"),
+   ("Jackson","Peter"),("Johnson","Rick"),
+   ("Lewis","Terry"),("Clarke","Robin")]
+
+workers_new = list(map(lambda x: f"{x[0].upper()}, {x[1]}", workers))
+
+for i in workers_new:
+    print(i)

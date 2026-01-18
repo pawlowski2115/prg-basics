@@ -9,7 +9,12 @@ class Square:
 square1 = Square(4)
 square2 = Square(6)
 
-print('Square with side 4:')
-print(f'Area is {square1.area()}, Perimeter is {square1.perimeter()}')
-print ('Square with side 6:')
-print(f'Area is {square2.area()}, Perimeter is {square2.perimeter()}')
+def main():
+   print('Square with side 4:')
+   print(f'Area is {square1.area()}, Perimeter is {square1.perimeter()}')
+   print ('Square with side 6:')
+   print(f'Area is {square2.area()}, Perimeter is {square2.perimeter()}')
+
+if __name__ == "__main__":
+    main()
+    
